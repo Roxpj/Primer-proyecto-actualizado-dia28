@@ -1,0 +1,40 @@
+/* Variables CSS */
+:root{
+    --color-principal: rgb(113, 240, 113);
+    --color-imagen: rgb(186, 185, 185);
+}
+
+#layout3{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10vw;
+    font-size: 2vw;
+}
+
+#layout3 img{
+    background-color: var(--color-imagen);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#layout3 div{
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1vw;
+}
+
+#layout3 div :first-child{
+    background-color: var(--color-principal);
+    grid-column: 1 / 3;
+    grid-row: 1 /3;
+
+    /*height: (100vw - (2*padding) - gap)/2 */
+    height: calc((100vw - (2*10vw) - 1vw) /2);
+    /* height: 39.5vw; */
+
+    
+}

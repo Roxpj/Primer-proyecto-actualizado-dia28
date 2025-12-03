@@ -1,0 +1,10 @@
+#cnt-float img{
+    background-color: gainsboro;
+    width: 120px;
+    height: 120px;
+    float: right;
+}
+
+#parrafo-inferior{
+    clear: right;
+}
